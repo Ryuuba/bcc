@@ -13,12 +13,12 @@ class BCCStatistics{
     virtual ~BCCStatistics(){}
     virtual void increase_blocked_arrivals();
     virtual void increase_arrivals();
-    virtual void add_time(double);
+    virtual void update_simtime(double);
     uint64_t get_arrivals();
-    uint64_t get_locked_arrivals();
+    uint64_t get_blocked_arrivals();
     double get_arrival_rate();
     double get_blocked_arrival_rate();
-    double get_sim_time();
+    double get_simtime();
     double get_blocking_prob();
     double erlang_b(uint16_t, double);
 };
