@@ -22,9 +22,9 @@ BCCSimulator::BCCSimulator(const char* filename) {
 }
 
 void BCCSimulator::start() {
-  bool next = true;
+  //bool next = true;
   double time = 0.0;
-  while (statistics.get_arrivals() < total_arrivals && next) {
+  while (statistics.get_arrivals() < total_arrivals) {
     Event ev = get_event();
     //std::cout << "Processing: " << ev << std::endl;
     statistics.update_simtime(ev.second);
