@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <stdio.h>
+#include <conio.h>
 #include <stdlib.h>
 #include <math.h>
 
@@ -67,9 +68,6 @@ void programa_evento(enum EvtTyp type, double epoch){
 	}
 	newevt=NULL;
 }
-
-
-
 
 int main(){
 	std::cout<<"\nSimulador de un sistema BCC"<<std::endl;
